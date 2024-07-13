@@ -7,5 +7,9 @@ def hi():
     return "WTF!"
 
 
-if __name__ == '__main__':
-    app.run()
+
+@app.route("/user/<x>")
+def hx(x):
+    return f'hellow, {x}'
+
+app.run()
